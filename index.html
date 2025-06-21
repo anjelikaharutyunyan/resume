@@ -1,0 +1,1406 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Developer Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+        body {
+            font-family: "Inter", sans-serif;
+            background-color: #f8fafc;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg,
+                    #d9dbdd 0%,
+                    #b4bec7 50%,
+                    #7c8388 100%);
+        }
+
+        .skill-badge {
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card {
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            border-left-color: #8b5cf6;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .avatar-ring {
+            box-shadow: 0 0 0 6px rgba(255, 255, 255, 0.2),
+                0 0 0 12px rgba(255, 255, 255, 0.1);
+        }
+
+        .timeline-item:not(:last-child):after {
+            content: "";
+            position: absolute;
+            left: 24px;
+            top: 32px;
+            height: calc(100% - 32px);
+            width: 2px;
+            background-color: #e2e8f0;
+        }
+
+        .text-custom-blue {
+            color: #6face1;
+        }
+    </style>
+    <style>
+        *,
+        ::before,
+        ::after {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        ::backdrop {
+            --tw-border-spacing-x: 0;
+            --tw-border-spacing-y: 0;
+            --tw-translate-x: 0;
+            --tw-translate-y: 0;
+            --tw-rotate: 0;
+            --tw-skew-x: 0;
+            --tw-skew-y: 0;
+            --tw-scale-x: 1;
+            --tw-scale-y: 1;
+            --tw-pan-x: ;
+            --tw-pan-y: ;
+            --tw-pinch-zoom: ;
+            --tw-scroll-snap-strictness: proximity;
+            --tw-gradient-from-position: ;
+            --tw-gradient-via-position: ;
+            --tw-gradient-to-position: ;
+            --tw-ordinal: ;
+            --tw-slashed-zero: ;
+            --tw-numeric-figure: ;
+            --tw-numeric-spacing: ;
+            --tw-numeric-fraction: ;
+            --tw-ring-inset: ;
+            --tw-ring-offset-width: 0px;
+            --tw-ring-offset-color: #fff;
+            --tw-ring-color: rgb(59 130 246 / 0.5);
+            --tw-ring-offset-shadow: 0 0 #0000;
+            --tw-ring-shadow: 0 0 #0000;
+            --tw-shadow: 0 0 #0000;
+            --tw-shadow-colored: 0 0 #0000;
+            --tw-blur: ;
+            --tw-brightness: ;
+            --tw-contrast: ;
+            --tw-grayscale: ;
+            --tw-hue-rotate: ;
+            --tw-invert: ;
+            --tw-saturate: ;
+            --tw-sepia: ;
+            --tw-drop-shadow: ;
+            --tw-backdrop-blur: ;
+            --tw-backdrop-brightness: ;
+            --tw-backdrop-contrast: ;
+            --tw-backdrop-grayscale: ;
+            --tw-backdrop-hue-rotate: ;
+            --tw-backdrop-invert: ;
+            --tw-backdrop-opacity: ;
+            --tw-backdrop-saturate: ;
+            --tw-backdrop-sepia: ;
+            --tw-contain-size: ;
+            --tw-contain-layout: ;
+            --tw-contain-paint: ;
+            --tw-contain-style:
+        }
+
+        /* ! tailwindcss v3.4.16 | MIT License | https://tailwindcss.com */
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box;
+            border-width: 0;
+            border-style: solid;
+            border-color: #e5e7eb
+        }
+
+        ::after,
+        ::before {
+            --tw-content: ''
+        }
+
+        :host,
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -moz-tab-size: 4;
+            tab-size: 4;
+            font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        body {
+            margin: 0;
+            line-height: inherit
+        }
+
+        hr {
+            height: 0;
+            color: inherit;
+            border-top-width: 1px
+        }
+
+        abbr:where([title]) {
+            -webkit-text-decoration: underline dotted;
+            text-decoration: underline dotted
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            font-size: inherit;
+            font-weight: inherit
+        }
+
+        a {
+            color: inherit;
+            text-decoration: inherit
+        }
+
+        b,
+        strong {
+            font-weight: bolder
+        }
+
+        code,
+        kbd,
+        pre,
+        samp {
+            font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+            font-feature-settings: normal;
+            font-variation-settings: normal;
+            font-size: 1em
+        }
+
+        small {
+            font-size: 80%
+        }
+
+        sub,
+        sup {
+            font-size: 75%;
+            line-height: 0;
+            position: relative;
+            vertical-align: baseline
+        }
+
+        sub {
+            bottom: -.25em
+        }
+
+        sup {
+            top: -.5em
+        }
+
+        table {
+            text-indent: 0;
+            border-color: inherit;
+            border-collapse: collapse
+        }
+
+        button,
+        input,
+        optgroup,
+        select,
+        textarea {
+            font-family: inherit;
+            font-feature-settings: inherit;
+            font-variation-settings: inherit;
+            font-size: 100%;
+            font-weight: inherit;
+            line-height: inherit;
+            letter-spacing: inherit;
+            color: inherit;
+            margin: 0;
+            padding: 0
+        }
+
+        button,
+        select {
+            text-transform: none
+        }
+
+        button,
+        input:where([type=button]),
+        input:where([type=reset]),
+        input:where([type=submit]) {
+            -webkit-appearance: button;
+            background-color: transparent;
+            background-image: none
+        }
+
+        :-moz-focusring {
+            outline: auto
+        }
+
+        :-moz-ui-invalid {
+            box-shadow: none
+        }
+
+        progress {
+            vertical-align: baseline
+        }
+
+        ::-webkit-inner-spin-button,
+        ::-webkit-outer-spin-button {
+            height: auto
+        }
+
+        [type=search] {
+            -webkit-appearance: textfield;
+            outline-offset: -2px
+        }
+
+        ::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            -webkit-appearance: button;
+            font: inherit
+        }
+
+        summary {
+            display: list-item
+        }
+
+        blockquote,
+        dd,
+        dl,
+        figure,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        hr,
+        p,
+        pre {
+            margin: 0
+        }
+
+        fieldset {
+            margin: 0;
+            padding: 0
+        }
+
+        legend {
+            padding: 0
+        }
+
+        menu,
+        ol,
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0
+        }
+
+        dialog {
+            padding: 0
+        }
+
+        textarea {
+            resize: vertical
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            opacity: 1;
+            color: #9ca3af
+        }
+
+        [role=button],
+        button {
+            cursor: pointer
+        }
+
+        :disabled {
+            cursor: default
+        }
+
+        audio,
+        canvas,
+        embed,
+        iframe,
+        img,
+        object,
+        svg,
+        video {
+            display: block;
+            vertical-align: middle
+        }
+
+        img,
+        video {
+            max-width: 100%;
+            height: auto
+        }
+
+        [hidden]:where(:not([hidden=until-found])) {
+            display: none
+        }
+
+        .container {
+            width: 100%
+        }
+
+        @media (min-width: 640px) {
+            .container {
+                max-width: 640px
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                max-width: 768px
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .container {
+                max-width: 1024px
+            }
+        }
+
+        @media (min-width: 1280px) {
+            .container {
+                max-width: 1280px
+            }
+        }
+
+        @media (min-width: 1536px) {
+            .container {
+                max-width: 1536px
+            }
+        }
+
+        .absolute {
+            position: absolute
+        }
+
+        .relative {
+            position: relative
+        }
+
+        .left-0 {
+            left: 0px
+        }
+
+        .top-0 {
+            top: 0px
+        }
+
+        .mx-2 {
+            margin-left: 0.5rem;
+            margin-right: 0.5rem
+        }
+
+        .mx-auto {
+            margin-left: auto;
+            margin-right: auto
+        }
+
+        .mb-1 {
+            margin-bottom: 0.25rem
+        }
+
+        .mb-2 {
+            margin-bottom: 0.5rem
+        }
+
+        .mb-3 {
+            margin-bottom: 0.75rem
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem
+        }
+
+        .mb-6 {
+            margin-bottom: 1.5rem
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+
+        .mr-2 {
+            margin-right: 0.5rem
+        }
+
+        .mr-3 {
+            margin-right: 0.75rem
+        }
+
+        .mt-12 {
+            margin-top: 3rem
+        }
+
+        .mt-2 {
+            margin-top: 0.5rem
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .grid {
+            display: grid
+        }
+
+        .h-10 {
+            height: 2.5rem
+        }
+
+        .h-2 {
+            height: 0.5rem
+        }
+
+        .h-28 {
+            height: 7rem
+        }
+
+        .h-32 {
+            height: 8rem
+        }
+
+        .h-8 {
+            height: 2rem
+        }
+
+        .w-10 {
+            width: 2.5rem
+        }
+
+        .w-28 {
+            width: 7rem
+        }
+
+        .w-32 {
+            width: 8rem
+        }
+
+        .w-8 {
+            width: 2rem
+        }
+
+        .w-full {
+            width: 100%
+        }
+
+        .max-w-6xl {
+            max-width: 72rem
+        }
+
+        .max-w-lg {
+            max-width: 32rem
+        }
+
+        .list-inside {
+            list-style-position: inside
+        }
+
+        .list-disc {
+            list-style-type: disc
+        }
+
+        .grid-cols-1 {
+            grid-template-columns: repeat(1, minmax(0, 1fr))
+        }
+
+        .flex-col {
+            flex-direction: column
+        }
+
+        .flex-wrap {
+            flex-wrap: wrap
+        }
+
+        .items-center {
+            align-items: center
+        }
+
+        .justify-center {
+            justify-content: center
+        }
+
+        .justify-between {
+            justify-content: space-between
+        }
+
+        .gap-2 {
+            gap: 0.5rem
+        }
+
+        .gap-4 {
+            gap: 1rem
+        }
+
+        .gap-8 {
+            gap: 2rem
+        }
+
+        .space-x-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-x-reverse: 0;
+            margin-right: calc(1rem * var(--tw-space-x-reverse));
+            margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+        }
+
+        .space-y-1> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.25rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-3> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(0.75rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-4> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-6> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(1.5rem * var(--tw-space-y-reverse))
+        }
+
+        .space-y-8> :not([hidden])~ :not([hidden]) {
+            --tw-space-y-reverse: 0;
+            margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+            margin-bottom: calc(2rem * var(--tw-space-y-reverse))
+        }
+
+        .overflow-hidden {
+            overflow: hidden
+        }
+
+        .rounded-2xl {
+            border-radius: 1rem
+        }
+
+        .rounded-full {
+            border-radius: 9999px
+        }
+
+        .rounded-lg {
+            border-radius: 0.5rem
+        }
+
+        .rounded-xl {
+            border-radius: 0.75rem
+        }
+
+        .border {
+            border-width: 1px
+        }
+
+        .border-gray-100 {
+            --tw-border-opacity: 1;
+            border-color: rgb(243 244 246 / var(--tw-border-opacity, 1))
+        }
+
+        .bg-blue-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(219 234 254 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-gray-200 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-green-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(220 252 231 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-purple-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(243 232 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-purple-600 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(147 51 234 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-red-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(254 226 226 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-white {
+            --tw-bg-opacity: 1;
+            background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1))
+        }
+
+        .bg-white\/10 {
+            background-color: rgb(255 255 255 / 0.1)
+        }
+
+        .bg-yellow-100 {
+            --tw-bg-opacity: 1;
+            background-color: rgb(254 249 195 / var(--tw-bg-opacity, 1))
+        }
+
+        .object-cover {
+            object-fit: cover
+        }
+
+        .p-5 {
+            padding: 1.25rem
+        }
+
+        .p-6 {
+            padding: 1.5rem
+        }
+
+        .p-8 {
+            padding: 2rem
+        }
+
+        .px-3 {
+            padding-left: 0.75rem;
+            padding-right: 0.75rem
+        }
+
+        .px-4 {
+            padding-left: 1rem;
+            padding-right: 1rem
+        }
+
+        .py-1 {
+            padding-top: 0.25rem;
+            padding-bottom: 0.25rem
+        }
+
+        .py-2 {
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem
+        }
+
+        .py-8 {
+            padding-top: 2rem;
+            padding-bottom: 2rem
+        }
+
+        .pl-1 {
+            padding-left: 0.25rem
+        }
+
+        .pl-12 {
+            padding-left: 3rem
+        }
+
+        .text-center {
+            text-align: center
+        }
+
+        .text-2xl {
+            font-size: 1.5rem;
+            line-height: 2rem
+        }
+
+        .text-3xl {
+            font-size: 1.875rem;
+            line-height: 2.25rem
+        }
+
+        .text-sm {
+            font-size: 0.875rem;
+            line-height: 1.25rem
+        }
+
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+
+        .font-bold {
+            font-weight: 700
+        }
+
+        .font-medium {
+            font-weight: 500
+        }
+
+        .font-semibold {
+            font-weight: 600
+        }
+
+        .text-blue-800 {
+            --tw-text-opacity: 1;
+            color: rgb(30 64 175 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-500 {
+            --tw-text-opacity: 1;
+            color: rgb(107 114 128 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-600 {
+            --tw-text-opacity: 1;
+            color: rgb(75 85 99 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-700 {
+            --tw-text-opacity: 1;
+            color: rgb(55 65 81 / var(--tw-text-opacity, 1))
+        }
+
+        .text-gray-800 {
+            --tw-text-opacity: 1;
+            color: rgb(31 41 55 / var(--tw-text-opacity, 1))
+        }
+
+        .text-green-800 {
+            --tw-text-opacity: 1;
+            color: rgb(22 101 52 / var(--tw-text-opacity, 1))
+        }
+
+        .text-purple-600 {
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity, 1))
+        }
+
+        .text-purple-800 {
+            --tw-text-opacity: 1;
+            color: rgb(107 33 168 / var(--tw-text-opacity, 1))
+        }
+
+        .text-red-800 {
+            --tw-text-opacity: 1;
+            color: rgb(153 27 27 / var(--tw-text-opacity, 1))
+        }
+
+        .text-white {
+            --tw-text-opacity: 1;
+            color: rgb(255 255 255 / var(--tw-text-opacity, 1))
+        }
+
+        .text-white\/90 {
+            color: rgb(255 255 255 / 0.9)
+        }
+
+        .text-yellow-800 {
+            --tw-text-opacity: 1;
+            color: rgb(133 77 14 / var(--tw-text-opacity, 1))
+        }
+
+        .shadow-md {
+            --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .shadow-xl {
+            --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        .transition {
+            transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+            transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+            transition-duration: 150ms
+        }
+
+        .hover\:bg-white\/20:hover {
+            background-color: rgb(255 255 255 / 0.2)
+        }
+
+        .hover\:text-purple-600:hover {
+            --tw-text-opacity: 1;
+            color: rgb(147 51 234 / var(--tw-text-opacity, 1))
+        }
+
+        .hover\:shadow-lg:hover {
+            --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+            --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+
+        @media (min-width: 768px) {
+            .md\:mb-0 {
+                margin-bottom: 0px
+            }
+
+            .md\:mr-8 {
+                margin-right: 2rem
+            }
+
+            .md\:grid-cols-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr))
+            }
+
+            .md\:flex-row {
+                flex-direction: row
+            }
+
+            .md\:justify-start {
+                justify-content: flex-start
+            }
+
+            .md\:p-12 {
+                padding: 3rem
+            }
+
+            .md\:text-left {
+                text-align: left
+            }
+
+            .md\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem
+            }
+
+            .md\:text-4xl {
+                font-size: 2.25rem;
+                line-height: 2.5rem
+            }
+        }
+
+        @media (min-width: 1024px) {
+            .lg\:col-span-2 {
+                grid-column: span 2 / span 2
+            }
+
+            .lg\:grid-cols-3 {
+                grid-template-columns: repeat(3, minmax(0, 1fr))
+            }
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header Section -->
+        <div class="gradient-bg rounded-2xl shadow-xl overflow-hidden mb-8">
+            <div class="p-8 md:p-12 flex flex-col md:flex-row items-center">
+                <div class="relative mb-6 md:mb-0 md:mr-8">
+                    <div class="w-32 h-32 rounded-full bg-white flex items-center justify-center avatar-ring">
+                        <img alt="Avatar" class="w-28 h-28 rounded-full object-cover" src="./profile.jpg">
+                    </div>
+                </div>
+
+                <div class="text-white text-center md:text-left">
+                    <h1 class="text-3xl md:text-4xl font-bold mb-2">Angelica Harutyunyan</h1>
+                    <h2 class="text-xl md:text-2xl font-semibold mb-4">
+                        Frontend Developer
+                    </h2>
+                    <p class="text-white/90 max-w-lg mb-6">
+                        Motivated Frontend Developer with 2+ years of experience in web and mobile development,
+                        including hands-on work with React, React Native, TypeScript and JavaScript. Eager to grow and take on new
+                        challenges.
+                    </p>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="mailto:anjelikaharutyunyan03@gmail.com"
+                            class="flex items-center bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition">
+                            <i class="fas fa-envelope mr-2"></i>
+                            anjelikaharutyunyan03@gmail.com
+                        </a>
+                        <a href="tel:+37477260178"
+                            class="flex items-center bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition">
+                            <i class="fas fa-phone mr-2"></i> +374 (77) 26 01 78
+                        </a>
+                        <a href="https://www.linkedin.com/in/anzhelika-harutyunyan-8b95622b8/" target="_blank"
+                            class="flex items-center bg-white/10 hover:bg-white/20 px-4 py-2 rounded-full transition">
+                            <i class="fab fa-linkedin mr-2"></i> Linkedin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <!-- Left Column -->
+            <div class="lg:col-span-2 space-y-8">
+                <!-- About Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-user mr-3 text-custom-blue"></i> About Me
+                    </h3>
+                    <p class="text-gray-600 mb-4">
+                        I’m a passionate and growth-oriented frontend developer with over 2 years of experience in web
+                        and mobile development.
+                        I’ve worked on a variety of projects, including e-commerce websites, automation tools, and
+                        cross-platform mobile apps.
+                        These experiences have helped me build a strong foundation in JavaScript, React, and
+                        mobile-first design. 
+                    </p>
+
+
+                    <p class="text-gray-600">
+                </div>
+
+                <!-- Experience  Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-briefcase mr-3 text-custom-blue"></i>
+                        Experience
+                    </h3>
+
+                    <div class="space-y-6">
+                        <!-- Experience 1 -->
+                        <div class="relative pl-12 timeline-item">
+                            <div
+                                class="absolute left-0 top-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                <i class="fas fa-laptop-code text-custom-blue"></i>
+                            </div>
+                            <div class="mb-1">
+                                <h4 class="text-xl font-semibold">Frontend Developer</h4>
+                                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-2">
+                                    <span>Berdl</span>
+                                    <span class="mx-2">•</span>
+                                    <span>November 2023 - May 2025</span>
+                                </div>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 pl-1">
+                                <li>
+                                    Develop responsive and dynamic websites using JavaScipt and CMS platforms for
+                                    optimal cross-device user experience.
+                                </li>
+                                <li>
+                                    Create automation tools to streamline workflows, boost productivity, and reduce
+                                    repetitive tasks.
+                                </li>
+                                <li>
+                                    Manage hosting and domain services to ensure deployment and maintenance.
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Experience 2 -->
+                        <div class="relative pl-12 timeline-item">
+                            <div
+                                class="absolute left-0 top-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                <i class="fas fa-mobile text-custom-blue"></i>
+                            </div>
+                            <div class="mb-1">
+                                <h4 class="text-xl font-semibold">Mobile Developer</h4>
+                                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-2">
+                                    <span>AWIS LLC</span>
+                                    <span class="mx-2">•</span>
+                                    <span>March 2023 - June 2023</span>
+                                </div>
+                            </div>
+                            <ul class="list-disc list-inside text-gray-600 space-y-1 pl-1">
+                                <li>
+                                    Developed cross-platform mobile applications using React Native and TypeScript.
+                                </li>
+                                <li>
+                                    Specialized in pixel-perfect UI design for a polished user experience.
+                                </li>
+                                <li>
+                                    Utilized TypeScript to ensure robust and functional app behavior on both
+                                    iOS and Android platforms.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- Projects Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-project-diagram mr-3 text-custom-blue"></i> Key
+                        Projects
+                    </h3>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <!-- Project 1 -->
+                        <div class="project-card bg-white border border-gray-100 rounded-lg p-5 hover:shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-ticket text-custom-blue"></i>
+                                </div>
+                                <h4 class="font-semibold">BuyTicket Platform</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">
+                                React, Redux, JavaScript (ES6), Firebase database/authentication
+                            </p>
+                            <p class="text-gray-500 text-sm">
+                                <b>Ticket purchasing website.</b>
+                                Users can browse events, save favorites, and easily add tickets to their cart.
+                                The platform offers a personalized homepage and integrates Firebase for secure
+                                authentication. <br>Admins can manage tickets and view user statistics, providing a
+                                seamless
+                                experience for both users and administrators.<br>
+                                <a href="https://buyticket-e2f6e.web.app/" target="_blank"><b>You can find project
+                                        here!</b></a>
+                            </p>
+                        </div>
+                        <!-- Project 2 -->
+                        <div class="project-card bg-white border border-gray-100 rounded-lg p-5 hover:shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-ticket text-custom-blue"></i>
+                                </div>
+                                <h4 class="font-semibold">Mobile Application</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">
+                                React Native, TypeScript, Firebase, TypeScript
+                            </p>
+                            <p class="text-gray-500 text-sm">
+                                <b>Taxi Service Application.</b>
+                                Designed and developed a pixel-perfect mobile application for a taxi service, focusing
+                                on user interface quality and core feature implementation.<br>
+                            </p>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-card bg-white border border-gray-100 rounded-lg p-5 hover:shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-ticket text-custom-blue"></i>
+                                </div>
+                                <h4 class="font-semibold">Google Chrome Extenstion</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">
+                                Chrome Extensions API, HTML5/CSS3, JavaScript (ES6),
+                            </p>
+                            <p class="text-gray-500 text-sm">
+                                <b>Table Capture Extenstion.</b>
+                                This custom Chrome extension extracts all HTML tables from the currently active tab and
+                                displays them in the extension popup. Users can view each table and download it as a CSV
+                                file. It uses plain JavaScript and the Chrome Extensions API for tab access, messaging,
+                                and DOM manipulation.<br>
+                                <a href="https://github.com/anjelikaharutyunyan/table-capture-extenstion"
+                                    target="_blank"><b>You can find project
+                                        here!</b></a>
+                            </p>
+                        </div>
+                        <!-- Project 3 -->
+                        <div class="project-card bg-white border border-gray-100 rounded-lg p-5 hover:shadow-lg">
+                            <div class="flex items-center mb-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-3">
+                                    <i class="fas fa-ticket text-custom-blue"></i>
+                                </div>
+                                <h4 class="font-semibold">Automatization Tool</h4>
+                            </div>
+                            <p class="text-gray-600 text-sm mb-3">
+                                JavaScript (ES6), HTML5 Canvas, html2canvas, JSZip, File APIs
+                            </p>
+                            <p class="text-gray-500 text-sm">
+                                <b>Batch Watermark Tool.</b>
+                                The Watermark Applier automates the graphic design process by allowing users to quickly
+                                apply watermarks to images. It offers customization options for watermark position,
+                                size, visibility, and quality. This tool streamlines repetitive tasks, making it easier
+                                and faster for designers to add watermarks and download the final image.
+                                <br>
+                                <a href="https://anjelikaharutyunyan.github.io/batchWatermark/" target="_blank"><b>You
+                                        can find project
+                                        here!</b></a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Column -->
+            <div class="space-y-8">
+                <!-- Skills Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-code mr-3 text-custom-blue"></i> Technical Skills
+                    </h3>
+
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Frontend</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React</span>
+                                <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">React
+                                    Native</span>
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Redux</span>
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">JavaScipt
+                                    (ESC6+)</span>
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">TypeScript
+                                  </span>
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Material
+                                    UI</span>
+                                <span class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">HTML5
+                                    / CSS3</span>
+                                <span
+                                    class="skill-badge bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Vite</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Database & Authentication</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="skill-badge bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">RESTful
+                                    API</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Database</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="skill-badge bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Firebase</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h4 class="font-semibold mb-2 text-gray-700">Version Control</h4>
+                            <div class="flex flex-wrap gap-2">
+                                <span
+                                    class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Git</span>
+                                <span
+                                    class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">GitHub</span>
+                                <span
+                                    class="skill-badge bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Bitbucket</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Educaion  Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-graduation-cap mr-3 text-custom-blue"></i>
+                        Education
+                    </h3>
+
+                    <div class="space-y-6">
+                        <!-- Education 1 -->
+                        <div class="relative pl-12 timeline-item">
+                            <div
+                                class="absolute left-0 top-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                <i class="fas fa-university text-custom-blue"></i>
+                            </div>
+                            <div class="mb-1">
+                                <h4 class="text-xl font-semibold">Bachelor of Computer Science</h4>
+                                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-2">
+                                    <span>National Polytechnic University of Armenia</span>
+                                    <!-- <span class="mx-2">•</span> -->
+                                    <span> 2021 - 2025</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Education 2 -->
+                        <div class="relative pl-12 timeline-item">
+                            <div
+                                class="absolute left-0 top-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                <i class="fab fa-react text-custom-blue"></i>
+                            </div>
+                            <div class="mb-1">
+                                <h4 class="text-xl font-semibold">React.js Course</h4>
+                                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-2">
+                                    <span>Armenian Code Academy</span>
+                                    <!-- <span class="mx-2">•</span> -->
+                                    <span>Jun 2024 - Sep 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Education 3 -->
+                        <div class="relative pl-12 timeline-item">
+                            <div
+                                class="absolute left-0 top-0 w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center">
+                                <i class="fab fa-js-square text-custom-blue"></i>
+                            </div>
+                            <div class="mb-1">
+                                <h4 class="text-xl font-semibold">Advanced JavaScript Course</h4>
+                                <div class="flex flex-wrap items-center text-sm text-gray-500 mb-2">
+                                    <span>Armenian Code Academy</span>
+                                    <!-- <span class="mx-2">•</span> -->
+                                    <span>Jan 2024 - Apr 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
+                        <i class="fas fa-certificate mr-3 text-custom-blue"></i>
+                        Certificates
+                    </h3>
+
+                    <div class="space-y-3">
+                        <!-- Advanced JavaScript -->
+                        <a href="https://drive.google.com/file/d/1xQVTZrqnU33RVVwOUFumSOqkdnoDd0KB/view?usp=drivesdk"
+                            target="_blank" class="block hover:bg-gray-100 p-2 rounded-lg transition duration-200">
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-2 rounded-lg mr-3">
+                                    <i class="fab fa-js-square text-custom-blue"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">
+                                        Advanced JavaScript
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+
+                        <!-- React.js -->
+                        <a href="https://drive.google.com/file/d/1sGD3Sbgr1LbANHjstshvYDMQD725ZSqF/view?usp=drivesdk"
+                            target="_blank" class="block hover:bg-gray-100 p-2 rounded-lg transition duration-200">
+                            <div class="flex items-start">
+                                <div class="bg-purple-100 p-2 rounded-lg mr-3">
+                                    <i class="fab fa-react text-custom-blue"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">
+                                        React.js
+                                    </h4>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Languages Section -->
+                <div class="bg-white rounded-xl shadow-md p-6">
+                    <h3 class="text-2xl font-bold mb-4 text-gray-800 flex items-center">
+                        <i class="fas fa-language mr-3 text-custom-blue"></i> Languages
+                    </h3>
+
+                    <div class="space-y-3">
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">Armenian</span>
+                                <span class="text-sm text-gray-500">Native</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 100%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">Russian</span>
+                                <span class="text-sm text-gray-500">Advanced</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between mb-1">
+                                <span class="font-medium text-gray-700">English</span>
+                                <span class="text-sm text-gray-500">Intermediate</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-2">
+                                <div class="bg-blue-600 h-2 rounded-full" style="width: 70%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="mt-12 text-center text-gray-500 text-sm">
+            <p>© 2025 Angelica Harutyunyan. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="https://www.linkedin.com/in/anzhelika-harutyunyan-8b95622b8/"
+                    class="hover:text-custom-blue transition"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/anjelikaharutyunyan" class="hover:text-custom-blue transition"><i
+                        class="fab fa-github"></i></a>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
